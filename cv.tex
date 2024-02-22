@@ -1,0 +1,164 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{www.linkedin.com/in/dotruong19}{\Large Truong Van Do}} & Email: \href{do.truong1910@icloud.com}{do.truong1910@icloud.com}\\
+  \href{https://www.linkedin.com/in/dotruong19/}{www.linkedin.com/in/dotruong19} & Mobile : +(84) 0963 047 046 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {VNU University of Engineering and Technology}{Ha Noi, Viet Nam}
+      {Computer Networks and Data Communication;  GPA: 3.21/4.0}{October. 2020 -- present}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Institute of Military Science and Technology}{17 Hoang Sam Cau giay, Ha Noi}
+      {Associate DevOps}{November 2023 - Present}
+      \begin{itemize} [noitemsep,topsep=0pt]
+    \item Developed and maintained CI/CD pipelines using Gitlab CI/CD, enabling automated building, and
+deployment of services.
+    \item Fully managed the whole platform, from the infrastructure to the platform services through the CI/CD, / Gitlab CI / ArgoCD/ Helm named template.
+
+\end{itemize}
+
+    \resumeSubheading
+      {Viettel High Tech}{40th floor, Landmark Tower Tu Liem, Ha Noi}
+      {DevOps intern}{April 2023 - Oct 2023}
+      \begin{itemize} [noitemsep,topsep=0pt]
+          \item Developed and maintained CI/CD pipelines using Jenkins, enabling automated building, testing, and deployment of applications.
+          \item integrated security testing and scanning tool SonarQube to Jenkins pipelines.
+          \item Contributed to the development and maintenance of Jenkins's shared library, which serves as a fundamental component used by all pipelines in Jenkins. Collaborated with a team to enhance the library's functionality, ensuring its reliability and usability across various pipeline configurations.
+          \item Collected services' logs using Grafana Loki and constructed a Grafana dashboard. Additionally, developed a module to expose the application's metrics to Prometheus.
+      \end{itemize}
+
+    \resumeSubheading
+      {Institute of Military Science and Technology}{17 Hoang Sam Cau giay, Ha Noi}
+      {Web developer intern}{October 2022 - january 2023}
+      \resumeItemListStart
+        \resumeItem{CDS-OLAI}
+          {Developed a graph component using ReactJS to assess the extent of drug exposure and implemented RESTful API integration to calculate the area under the line between two points on the graph.}
+        \resumeItem{khoPhuclam-soft}
+          {worked with ExpressJS on the back-end to create and maintain RESTful APIs for tracking transactions throughout the day. These APIs facilitate interaction with ReactJS on the front-end.}
+      \resumeItemListEnd
+
+
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Helm templates}
+      {A helm template project using named template to render manifest files.}
+    \resumeSubItem{Todo app}
+      {A web application help users organize and manage their tasks.}
+    \resumeSubItem{E-commerce web application}
+      {A web application written in javascript using ReactJS library and ExpressJS framework.}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Programming Languages}{: Javascript, C++, SQL, Java}
+   }
+   \item{
+     \textbf{Containerization and Orchestration}{: Kubernetes, Docker}
+   }
+   \item{
+     \textbf{Continuous Integration/Continuous Delivery (CI/CD)}{: Jenkins, GitLab CI/CD, ArgoCD}
+   }
+   \item{
+     \textbf{Monitoring and Alerting}{: Grafana, Prometheus}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
